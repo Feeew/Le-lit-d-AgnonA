@@ -1,0 +1,108 @@
+/*
+=============================================
+STYLE CSS DE INDEX.PHP (header, background, menu, drapeau et titre)
+=============================================
+*/
+
+*{
+	margin: 0 auto;
+	font-family: 'Gabriela', serif;
+	/*font-family: 'Berkshire Swash', cursive;*/
+}
+
+body{
+	background:url(img/WP_vert.jpg) rgba(47, 73, 3, 0.7);
+	background-attachment: fixed;
+}
+
+/*Centre de la page, format "fiche"*/
+#wrapper{
+	width:960px;
+	height:950px;
+	position:relative;
+	margin-top:28px;
+	border-radius:5px;
+	border: 4px groove forestgreen;
+	box-shadow: 8px 8px 8px #111; 
+	background:#c5dca3;
+}
+
+/*première balise "ul" de la div "menu"*/
+#menu > ul{
+	list-style-type:none;
+	margin-top:-21px;
+	height:51px;
+	cursor:pointer;
+	float:right;
+	padding:0;
+	font-size:100%;
+}
+
+/*première balise "a" de la première balise "li" de la première balise "ul" de la div "menu"*/
+#menu > ul > li > a{
+	width:127px;
+	display:block; 
+	text-align:center;
+	/* background : #698540; */
+	background-image:url(img/Boutons/Fond.gif);
+}
+
+.ul_menu{
+	margin-right:-6px;
+}
+
+.ul_sous_menu{
+	max-height:0px;
+	list-style-type:none;
+	overflow:hidden;
+	transition: 0.3s max-height ease;  
+	background: #698540;
+	margin-left:6px;
+	width:120px;
+	padding:0px;
+	border-radius: 0 0 6px 6px;
+	position:relative;
+	border-bottom:1px solid black;
+}
+
+.ul_sous_menu li{
+	width:116px;
+	text-align:center;
+}
+.ul_menu:hover .ul_sous_menu{
+	max-height:150px;
+}
+
+#menu a:hover, .active{
+	color:white;
+}
+
+#title{
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
+#flag{
+	position:absolute;
+	top:10px;
+	right:420px;
+}
+
+#main{
+	margin-top:40px;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.page{
+	display:none;
+}
+
+/*
+==============================================
+STYLE CSS DES DIFFERENTES PAGES A PARTIR D'ICI
+==============================================
+*/
+
+
